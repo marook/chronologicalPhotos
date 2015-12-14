@@ -1,0 +1,13 @@
+chronologicalPhotos
+
+1) Installation
+
+
+------------------------------------------------------------------------
+Installation
+
+$ aptitude install python-exif
+
+OR
+
+$ pip install exifread
