@@ -19,7 +19,10 @@ def renameRecursive(path):
         if(not isImageFileName(name)):
             continue
         
-        renameImage(os.path.join(path, name))
+        try:
+            renameImage(os.path.join(path, name))
+        except Exception as e:
+            print 'Failed to rename %s: %s' % (name, e)
 
 def isImageFileName(imgPath):
     imgFileName = os.path.basename(imgPath).lower()
